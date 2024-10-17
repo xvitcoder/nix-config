@@ -17,12 +17,6 @@
 
     # Global catppuccin theme
     catppuccin.url = "github:catppuccin/nix";
-
-    # NixOS Spicetify
-    spicetify-nix = {
-      url = "github:Gerg-L/spicetify-nix";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
   };
 
   outputs = {
@@ -36,7 +30,7 @@
 
     # Define user configurations
     users = {
-      nabokikh = {
+      xvitcoder = {
         email = "xvitcoder@gmail.com";
         fullName = "Vitalie Mudrenco";
         gitKey = "testkey123";
@@ -71,11 +65,13 @@
     nixosConfigurations = {
       workstation = mkNixosConfiguration "workstation" "xvitcoder";
       thinkpad = mkNixosConfiguration "workstation" "xvitcoder";
+      virtualbox = mkNixosConfiguration "virtualbox" "xvitcoder";
     };
 
     homeConfigurations = {
       "xvitcoder@workstation" = mkHomeConfiguration "x86_64-linux" "xvitcoder" "workstation";
       "xvitcoder@thinkpad" = mkHomeConfiguration "x86_64-linux" "xvitcoder" "thinkpad";
+      "xvitcoder@virtualbox" = mkHomeConfiguration "x86_64-linux" "virtualbox" "thinkpad";
     };
 
     overlays = import ./overlays {inherit inputs;};
