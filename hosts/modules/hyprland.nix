@@ -2,6 +2,9 @@
   # Call dbus-update-activation-environment on login
   services.xserver.updateDbusEnvironment = true;
 
+  services.xserver.displayManager.autoLogin.enable = true;
+  services.xserver.displayManager.autoLogin.user = "xvitcoder";
+
   # Enables support for Bluetooth
   hardware.bluetooth = {
     enable = true;

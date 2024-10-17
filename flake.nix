@@ -33,7 +33,7 @@
       xvitcoder = {
         email = "xvitcoder@gmail.com";
         fullName = "Vitalie Mudrenco";
-        gitKey = "testkey123";
+        gitKey = "0xEFA1076BB814FD09";
         name = "xvitcoder";
       };
     };

@@ -15,7 +15,7 @@
       no-comments = true;
       no-emit-version = true;
       no-greeting = true;
-      keyid-format = "0xlong";
+      keyid-format = "LONG";
       list-options = "show-uid-validity";
       verify-options = "show-uid-validity";
       with-key-origin = true;

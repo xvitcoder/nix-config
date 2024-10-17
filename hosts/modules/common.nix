@@ -166,4 +166,7 @@
 
   # OpenSSH daemon
   services.openssh.enable = true;
+
+  # GPG Agent
+  gnupg.agent.enable = true;
 }
