@@ -1,7 +1,6 @@
 {...}: {
   imports = [
     ../modules/common.nix
-    ../modules/corectrl.nix
     ../modules/hyprland.nix
   ];
 

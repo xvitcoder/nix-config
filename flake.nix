@@ -71,7 +71,7 @@
     homeConfigurations = {
       "xvitcoder@workstation" = mkHomeConfiguration "x86_64-linux" "xvitcoder" "workstation";
       "xvitcoder@thinkpad" = mkHomeConfiguration "x86_64-linux" "xvitcoder" "thinkpad";
-      "xvitcoder@virtualbox" = mkHomeConfiguration "x86_64-linux" "virtualbox" "thinkpad";
+      "xvitcoder@virtualbox" = mkHomeConfiguration "x86_64-linux" "xvitcoder" "virtualbox";
     };
 
     overlays = import ./overlays {inherit inputs;};
