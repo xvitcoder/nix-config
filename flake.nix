@@ -37,10 +37,10 @@
     # Define user configurations
     users = {
       nabokikh = {
-        email = "alexander.nabokikh@olx.pl";
-        fullName = "Alexander Nabokikh";
-        gitKey = "C5810093";
-        name = "nabokikh";
+        email = "xvitcoder@gmail.com";
+        fullName = "Vitalie Mudrenco";
+        gitKey = "testkey123";
+        name = "xvitcoder";
       };
     };
 
@@ -69,13 +69,13 @@
       };
   in {
     nixosConfigurations = {
-      energy = mkNixosConfiguration "energy" "nabokikh";
-      nabokikh-z13 = mkNixosConfiguration "nabokikh-z13" "nabokikh";
+      workstation = mkNixosConfiguration "workstation" "xvitcoder";
+      thinkpad = mkNixosConfiguration "workstation" "xvitcoder";
     };
 
     homeConfigurations = {
-      "nabokikh@energy" = mkHomeConfiguration "x86_64-linux" "nabokikh" "energy";
-      "nabokikh@nabokikh-z13" = mkHomeConfiguration "x86_64-linux" "nabokikh" "nabokikh-z13";
+      "xvitcoder@workstation" = mkHomeConfiguration "x86_64-linux" "xvitcoder" "workstation";
+      "xvitcoder@thinkpad" = mkHomeConfiguration "x86_64-linux" "xvitcoder" "thinkpad";
     };
 
     overlays = import ./overlays {inherit inputs;};
